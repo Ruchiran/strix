@@ -1,0 +1,807 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 29, 2016, 7:18:35 AM
+    Author     : ASUS
+*/
+
+.tag-line-iphone{
+    font-size: 20px;
+    color:#1FBAA5;
+    
+    
+}
+.tag-line-ipad{
+    font-size: 25px;
+    color:#1FBAA5;
+    
+}
+/* ------------------------------------------------------ Mixing CSS ---------------------------------------------------------- */
+/* ------------------------------------------------------ Mixing CSS ---------------------------------------------------------- */
+/* ------------------------------------------------------ colors --------------------------------------------------------------- */
+.whitecolor {
+  background: #fff;
+}
+
+.graycolor {
+  background: #f1f5f1;
+}
+
+.pointcolor {
+  color: #3a77bc;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.colsericon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+/* ------------------------------------------------------ colors --------------------------------------------------------------- */
+/* ------------------------------------------------------  dashboard  CSS --------------------------------------------------------- */
+.main_wrapper {
+  background: #fff;
+  border-top: 1px solid #f1f5f1;
+}
+
+.main_wrapper .user-pic {
+  margin-top: 25px;
+}
+
+.main_wrapper .user-pic p.usersetting {
+  padding-top: 10px;
+}
+
+.main_wrapper .user-pic p.usersetting span.setting {
+  font-size: 18px;
+  color: #bdbdbd;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.main_wrapper .user-pic p.usersetting span.logout {
+  font-size: 18px;
+  color: #bdbdbd;
+  padding: 9px;
+}
+
+.main_wrapper .user-pic p.usersetting .border-right {
+  border-right: 1px solid #f1f5f1;
+}
+
+.main_wrapper .user-pic .round {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: #fff;
+  padding: 2px;
+  width: 92px;
+  border: 1px solid #f1f5f1;
+  margin: 0 auto;
+}
+
+.main_wrapper .user-pic div.preline {
+  margin: 0px;
+  padding: 0px 0px 10px 0px;
+}
+
+.main_wrapper .user-pic div.preline .progress {
+  margin: 0px;
+  padding: 0px;
+}
+
+.main_wrapper .user-pic p.completion {
+  font-size: 11px;
+  color: #cfcfcf;
+}
+
+.main_wrapper .user-pic p.username {
+  font-size: 12px;
+  color: #6c99cd;
+  margin: 0px;
+  padding: 8px 0px 0px 0px;
+}
+
+.main_wrapper .user-pic p.edit {
+  font-size: 12px;
+  color: #666;
+  padding: 2px 5px 2px 5px;
+  margin: 0px;
+}
+
+.main_wrapper .navigation p {
+  color: #666;
+}
+
+.main_wrapper .navigation ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.main_wrapper .navigation ul li {
+  list-style: none;
+  width: 198px;
+  border-bottom: 1px solid #f1f5f1;
+}
+
+.main_wrapper .navigation ul li a {
+  padding: 18px 0px 18px 0px;
+  display: block;
+  cursor: pointer;
+  color: #666;
+}
+
+.main_wrapper .navigation ul li a span {
+  padding: 5px 20px 5px 5px;
+}
+
+.main_wrapper .navigation ul li :hover {
+  text-decoration: none;
+}
+
+.main_wrapper .navigation ul li.active {
+  background: #f1f5f1;
+  border-bottom: none !important;
+  color: #000;
+  font-size: 14px;
+}
+
+.main_wrapper .navigation ul li.active a {
+  color: #7b6c6c;
+}
+
+.main_wrapper .navigation .advanceoption li a {
+  padding: 10px 0px 10px 0px;
+  text-decoration: none;
+}
+
+.main_wrapper .navigation .advanceoption li :hover {
+  text-decoration: none;
+}
+
+.main_wrapper .updated {
+  padding: 15px 0px 15px 0px;
+}
+
+.main_wrapper .updated .updatebtn input {
+  background: #5a8dc7;
+  border-radius: 0px;
+  border: 1px solid #5a8dc7;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 10px 5px 10px;
+}
+
+.main_wrapper .updated .updatebtn :hover {
+  background: #245286;
+  border: 1px solid #245286;
+  border-radius: 0px;
+  text-align: center;
+  color: #fff;
+  padding: 5px 10px 5px 10px;
+}
+
+.main_wrapper .rightside .dashboard {
+  background: #F7F7F7;
+  border-bottom: 1px solid #E8E3E3;
+}
+
+.main_wrapper .rightside .dashboard h2 {
+  font-family: 'Raleway', sans-serif;
+  color: #686868;
+  margin-top: 10px;
+}
+
+.main_wrapper .rightside .dashboard p.status {
+  font-size: 12px;
+  color: #686868;
+  padding-left: 2px;
+}
+
+.main_wrapper .rightside .dashboard .menuicon {
+  padding: 30px 0px 0px 0px;
+  font-size: 18px;
+}
+
+.main_wrapper .rightside .dashboard .logout {
+  padding: 30px 0px 0px 0px;
+  display: inline-block;
+  font-size: 18px;
+}
+
+.main_wrapper .body-container {
+  padding-top: 12px;
+}
+
+.main_wrapper .body-container .panel-primary .panel-heading span.icon {
+  width: 20px;
+  display: inline-block;
+  margin-left: -15px;
+}
+
+.main_wrapper .body-container .panel-primary .panel-heading span.icondiff {
+  width: 20px;
+  display: inline-block;
+  margin-left: -15px;
+}
+
+.main_wrapper .body-container .panel-primary .panel-heading-active {
+  color: #fff;
+  background-color: #BFBFBF;
+  border-color: #BFBFBF;
+}
+
+.main_wrapper .body-container .usernavigation {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.main_wrapper .body-container .usernavigation .uisubmenu {
+  text-align: center;
+}
+
+.main_wrapper .body-container .usernavigation .uisubmenu .sub {
+  margin: 0px 0px 10px 0px;
+  display: block;
+}
+
+.main_wrapper .body-container .usernavigation .uisubmenu .sub a {
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  font-size: 0.9em;
+  display: block;
+  background: #387AB6;
+  color: #fff;
+}
+
+.main_wrapper .body-container .usernavigation .uisubmenu .sub :hover {
+  text-decoration: none;
+}
+
+/* -------------------------------------------------- Overidding boostrap CSS ---------------------------------------------  */
+.form-control:focus {
+  -webkit-box-shadow: 0 4px 2px -2px rgba(51, 122, 183, 0.25);
+  -moz-box-shadow: 0 4px 2px -2px rgba(51, 122, 183, 0.25);
+  box-shadow: 0 4px 2px -2px rgba(51, 122, 183, 0.25);
+}
+
+.form-control:hover {
+  -webkit-box-shadow: 0 4px 2px -2px rgba(51, 122, 183, 0.25);
+  -moz-box-shadow: 0 4px 2px -2px rgba(51, 122, 183, 0.25);
+  box-shadow: 0 4px 2px -2px rgba(51, 122, 183, 0.25);
+}
+
+.panel, .panel-heading {
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+
+.panel-footer {
+  background: #fff;
+}
+
+.panel-footer select {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0px;
+  border-bottom: 1px dashed #337ab7;
+  cursor: pointer;
+}
+
+.panel-footer p {
+  font-size: 12px;
+  color: #333;
+  margin: 0px;
+  padding: 12px 0px 5px 0px;
+}
+
+.panel-footer .largelabel {
+  font-size: 18px;
+}
+
+.panel-primary {
+  border-color: #e5e9e5;
+  box-shadow: 2px 3px 3px #e5e9e5;
+}
+
+.panel-primary .userpro .userpro-marginfix {
+  margin: 0px;
+  padding: 5px 0px 5px 0px;
+}
+
+.panel-primary .userpro .userpro-marginfix span {
+  color: #757575;
+  font-size: 14px;
+}
+
+.panel-primary .userpro .userpro-marginfix .button-changepassword {
+  background: none;
+  border: 1px solid #f29120;
+  color: #f29120;
+  font-size: 12px;
+  margin-left: 10px;
+  padding: 2px 35px 2px 35px;
+}
+
+.panel-primary .userpro .userpro-marginfix .labelname {
+  font-size: 14px;
+  color: #B7B3B3;
+}
+
+.panel-primary .userpro .user {
+  font-size: 21px;
+  color: #666;
+  padding: 0px;
+}
+
+.panel-primary .userpro .user .editmain {
+  font-size: 15px;
+  padding-left: 5px;
+}
+
+.summery .pointer .pointcolor {
+  font-size: 25px;
+}
+
+/* -------------------------------------------------------User login CSS ---------------------------------------------------- */
+.main_login_wrapper {
+  background: #F7F7F7;
+}
+
+.main_login_wrapper .wrapper {
+  margin: 75px auto;
+  width: 95%;
+  padding-bottom: 5%;
+}
+
+.main_login_wrapper .wrapper .emaillogin h2 {
+  font-family: 'Raleway', sans-serif;
+}
+
+.main_login_wrapper .wrapper .emaillogin .login input {
+  border-radius: 0%;
+  -webkit-border-radius: 0%;
+  -moz-border-radius: 0%;
+  -ms-border-radius: 0%;
+  -o-border-radius: 0%;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  -webkit-box-shadow: 0 4px 2px -2px rgba(51, 122, 183, 0.25);
+  -moz-box-shadow: 0 4px 2px -2px rgba(51, 122, 183, 0.25);
+  box-shadow: 0 4px 2px -2px rgba(51, 122, 183, 0.25);
+  padding: 3px 0px 3px 25px;
+  background: none;
+}
+
+.main_login_wrapper .wrapper .emaillogin .login input:hover {
+  border-radius: 0px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  -webkit-box-shadow: 0 4px 2px -2px rgba(51, 122, 183, 0.25);
+  -moz-box-shadow: 0 4px 2px -2px rgba(51, 122, 183, 0.25);
+  box-shadow: 0 4px 2px -2px rgba(51, 122, 183, 0.25);
+}
+
+.main_login_wrapper .wrapper .emaillogin .login input:focus {
+  border-radius: 0px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  -webkit-box-shadow: 0 4px 2px -2px rgba(51, 122, 183, 0.25);
+  -moz-box-shadow: 0 4px 2px -2px rgba(51, 122, 183, 0.25);
+  box-shadow: 0 4px 2px -2px rgba(51, 122, 183, 0.25);
+}
+
+.main_login_wrapper .wrapper .emaillogin .login input:active {
+  border-radius: 0px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  -webkit-box-shadow: 0 4px 2px -2px rgba(51, 122, 183, 0.25);
+  -moz-box-shadow: 0 4px 2px -2px rgba(51, 122, 183, 0.25);
+  box-shadow: 0 4px 2px -2px rgba(51, 122, 183, 0.25);
+}
+
+.main_login_wrapper .wrapper .emaillogin .login .username {
+  padding: 15px 0px 15px 0px;
+  position: relative;
+}
+
+.main_login_wrapper .wrapper .emaillogin .login .username i {
+  position: absolute;
+  top: 24px;
+  color: #6ea4e3;
+}
+
+.main_login_wrapper .wrapper .emaillogin .login .password {
+  padding: 0px 0px 15px 0px;
+  position: relative;
+}
+
+.main_login_wrapper .wrapper .emaillogin .login .password i {
+  position: absolute;
+  top: 10px;
+  color: #6ea4e3;
+}
+
+.main_login_wrapper .wrapper .emaillogin .login .register-password {
+  padding: 0px 0px 15px 0px;
+  position: relative;
+}
+
+.main_login_wrapper .wrapper .emaillogin .login .register-password i {
+  position: absolute;
+  top: 10px;
+  color: #6ea4e3;
+}
+
+.main_login_wrapper .wrapper .emaillogin .submiting {
+  margin: 30px 0px 30px 0px;
+}
+
+.main_login_wrapper .wrapper .emaillogin .submiting p {
+  font-size: 11px;
+  margin: 0px;
+  vertical-align: bottom;
+}
+
+.main_login_wrapper .wrapper .emaillogin .submiting .login .but {
+  background: #5a8dc7;
+  border-radius: 0px;
+  text-align: center;
+  color: #fff;
+  padding: 5px 0px 5px 0px;
+}
+
+.main_login_wrapper .wrapper .emaillogin .submiting .login :hover {
+  background: #245286;
+}
+
+.main_login_wrapper .wrapper .emaillogin .submiting .forgot-password p {
+  height: 34px;
+  vertical-align: bottom;
+  display: table-cell;
+  color: #969696;
+  text-align: right;
+}
+
+.main_login_wrapper .wrapper .emaillogin .noteliner p {
+  padding: 0px;
+  margin: 0px;
+  font-size: 12px;
+  color: #969696;
+}
+
+.main_login_wrapper .wrapper .seperator .vertical {
+  width: 1px;
+  height: 110px;
+  background: #A0A2A0;
+  position: relative;
+}
+
+.main_login_wrapper .wrapper .seperator span {
+  text-align: center;
+  display: block;
+}
+
+.main_login_wrapper .wrapper .login-social .social h2 {
+  font-family: 'Raleway', sans-serif;
+}
+
+.main_login_wrapper .wrapper .login-social .social .social-plugin .facebook {
+  padding: 20px 0px 10px 0px;
+}
+
+.main_login_wrapper .wrapper .login-social .social .social-plugin .linkedins {
+  padding: 5px 0px 5px 0px;
+}
+
+.main_login_wrapper .wrapper .login-social .social .social-plugin .google {
+  padding: 5px 0px 5px 0px;
+}
+
+.main_login_wrapper .wrapper .login-social .social .social-plugin .secure p {
+  margin: 0px;
+  padding: 15px 0px 20px 0px;
+  font-size: 13px;
+  color: #666;
+}
+
+.main_login_wrapper .wrapper .login-social .social .social-plugin .new_account a {
+  vertical-align: top;
+  position: relative;
+  display: block;
+  border: 1px solid #cfcfcf;
+  text-decoration: none;
+}
+
+.main_login_wrapper .wrapper .login-social .social .social-plugin .new_account a input {
+  background: #ff6600;
+  border-radius: 0px;
+  color: #fff;
+  border: 1px solid #ff6600;
+}
+
+.main_login_wrapper .wrapper .login-social .social .social-plugin .new_account a :hover {
+  background: #D85600;
+  border: 1px solid #D85600;
+}
+
+.main_login_wrapper .wrapper .sub-windowfix {
+  padding-bottom: 25px;
+ /* background-image: url('https://fmffiles.s3.amazonaws.com/dist/images/cover/bg.jpg');*/
+  background-color: #fff;
+  background-size: cover;
+}
+
+/* -------------------------------------------------------User login CSS ---------------------------------------------------- */
+/* -------------------------------------------------header ------------------------------------------------------- */
+/* -------------------------------------------------Start chat CSS ------------------------------------------------------- */
+.userpro .agent .thumb-sm .media-object {
+  width: 100px;
+  padding: 15px;
+}
+
+.userpro .agent .media-body {
+  border-right: 3px solid #e05d6f;
+  margin-right: 65px;
+  text-align: right;
+  padding: 10px 10px 10px 0px;
+}
+
+.userpro .agent .media-body .media-heading a {
+  font-size: 14px;
+  color: #387AB6;
+  font-weight: bold;
+}
+
+.userpro .agent .media-body .media-heading span.datetime {
+  color: #666;
+}
+
+.userpro .agent .media-body .body {
+  font-size: 13px;
+  color: #969393;
+  font-family: sans-serif;
+  float: right;
+  text-align: right;
+  display: block;
+  border: 1px solid #f1f5f1;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.userpro .agent :after {
+  content: "";
+  height: 0;
+  width: 0;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid #e05d6f;
+  border-top: 4px solid transparent;
+  position: absolute;
+  top: 25px;
+  right: 111px;
+  z-index: 1;
+}
+
+.userpro .nuser .thumb-sm .media-object {
+  width: 100px;
+  padding: 15px;
+}
+
+.userpro .nuser .media-body {
+  border-left: 3px solid #5cb85c;
+  margin-left: 65px;
+  text-align: left;
+  padding: 10px 0px 10px 10px;
+}
+
+.userpro .nuser .media-body .media-heading a {
+  font-size: 14px;
+  color: #387AB6;
+  font-weight: bold;
+}
+
+.userpro .nuser .media-body .media-heading span.datetime {
+  color: #666;
+}
+
+.userpro .nuser .media-body .body {
+  font-size: 13px;
+  color: #969393;
+  font-family: sans-serif;
+  float: left;
+  text-align: left;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: 1px solid #f1f5f1;
+  padding: 10px;
+}
+
+.userpro .nuser :after {
+  content: "";
+  height: 0;
+  width: 0;
+  border-bottom: 4px solid transparent;
+  border-right: 4px solid #5cb85c;
+  border-top: 4px solid transparent;
+  position: absolute;
+  top: 25px;
+  left: 111px;
+  z-index: 1;
+}
+
+.userpro .tile-footer {
+  position: relative;
+  padding: 15px;
+}
+
+.userpro .tile-footer .chat-form {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #dbe0e2;
+  overflow: hidden;
+  clear: both;
+}
+
+.userpro .tile-footer .chat-form .input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+}
+
+.userpro .tile-footer .chat-form .input-group .input-group-btn {
+  position: relative;
+  font-size: 0;
+  white-space: nowrap;
+}
+
+.userpro .tile-footer .chat-form .input-group .input-group-btn .btn-default {
+  padding: 8px 25px 5px 25px;
+  color: #666;
+}
+
+.userpro .tile-footer .chat-form .input-group .boditext {
+  font-size: 11px !important;
+}
+
+/* -------------------------------------------------END chat CSS ------------------------------------------------------- */
+
+/*------------- custom css -------------------*/
+
+@media (min-width: 768px){
+    .navbar-nav>li>a {
+        padding: 15px 0;
+        float: left;
+    }
+}
+
+.usernavigation {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.usernavigation .uisubmenu {
+    text-align: center;
+}
+
+.usernavigation .uisubmenu .sub {
+    margin: 0px 0px 10px 0px;
+    display: block;
+}
+
+.usernavigation .uisubmenu .sub a {
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    font-size: 0.9em;
+    display: block;
+    background: #387AB6;
+    color: #fff;
+}
+
+.usernavigation .uisubmenu .sub :hover {
+    text-decoration: none;
+}
+
+.bordertop { border-top: 1px solid #E8E3E3; }
+
+.dashboardnobttomborder {  border-bottom: none!important; }
+
+.selectbuton {    
+    background: #5a8dc7;    
+    border-radius: 0px;    
+    border: 1px solid #5a8dc7;    
+    text-align: center;   
+    color: #fff;
+    cursor: pointer;   
+    padding: 5px 10px 5px 10px;
+}
+.component {
+    padding:10px;
+}
+.component .transitions  { font-size:20px; }
+
+.payment_deposite { margin:0px; padding:0px; }
+.payment_deposite p { margin:5px 0px 5px 0px; padding:3px 0px 3px 0px; font-size:13px; }
+select,input[type='number'] {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0px;
+    border-bottom: 1px dashed #337ab7;
+    cursor: pointer;
+}
+textarea { border:1px solid #cfcfcf; padding:10px; }
+
+.marginfix { margin:10px 0px 10px 0px; }
+
+.balanceheading .normal { font-size:16px; font-weight:bold; }
+
+.transitionform .normal { padding:5px; font-size:18px; }
+
+/*select {
+    width: 100%; 
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0px;
+    border-bottom: 1px dashed #337ab7;
+    cursor: pointer;
+}*/
+
+.main_wrapper {
+    margin-top: 23px;
+}
+
+a.edit-prof
+{
+    color: white !important;
+}
+
+/*profile collapse style*/
+.panel-heading .accordion-toggle:after {
+  /* symbol for "opening" panels */
+  font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+  content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+  float: right;        /* adjust as needed */
+  color: grey;         /* adjust as needed */
+}
+.panel-heading .accordion-toggle.collapsed:after {
+  /* symbol for "collapsed" panels */
+  content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+}
+

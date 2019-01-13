@@ -1,0 +1,588 @@
+
+<!doctype html>
+<html><head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link rel="shortcut icon" type="image/png" href="http://localhost/strix/assets/images/icon.png"/>
+        <meta name="Author" content="strix.com"/>
+        <meta name="Copyright" content="strix.com, All Rights Reserved."/>
+
+        <title>Train Master</title>
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <link href="http://localhost/strix/assets/css/fmf_core.css" rel="stylesheet" type="text/css"/>
+        <link href="http://localhost/strix/assets/css/nav.css" rel="stylesheet" type="text/css"/>
+        <script src="http://localhost/strix/assets/js/classie.js" type="text/javascript"></script>
+        <script src="http://localhost/strix/assets/js/gnmenu.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet"  type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link href="http://http://localhost/strix/assets/css/index.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="themes/StrixHomeTheme.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+    .container-1{width:100%;height: 100vh;background-color: #e5e0e0;}
+    body{
+       background: #f7f7f7 !important; /* For Safari 5.1 to 6.0 */
+    }
+</style>
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+</head>
+<body  class="bodyid" id="chkbodyid" >
+   
+<style>
+    /*
+       Navigation dropdown list
+       --Start--
+    */
+    .h2,h2 {font-weight: 100;}
+    .h3,h3 {font-weight: 100; color: #1FBAA5!important;}
+    .h4,h4 {font-weight: 100;}
+    .h5,h5 {font-weight: 100 !important;}
+    .h6,h6 {font-weight: 500;}
+    .dropdown-menu {
+        padding: 5px 5px !important;
+        border-radius: 0px;
+        border: none;
+        margin-top:0px!important;
+        left: 10px;
+
+    }
+    .clnumber {
+            font-size: 1em;
+            color: #666;
+            display: block;
+            vertical-align: middle;
+            position: relative;
+            line-height: 18px;
+            padding: 0px;
+    }
+    .navbar-nav>li>a { padding:15px 0px; }
+
+    .mar-top-0{margin-top: 0;}
+
+    .dropDown li a{padding: 5px 0px 5px 0px!important;}
+
+    .dropDown li a:hover i{color: #3a77bc !important;}
+
+    .dropDown li a:hover{background: none !important;color:#333 !important}
+
+    .navbar-nav li{    padding-left: 10px;
+                       padding-right: 10px;
+    }
+    .naroLargeTxt{font-size: 20px;}
+    .navi-li-icon{font-size: 20px;width: 30px;}
+    /*
+                    Navigation dropdown list
+                    --End--
+    */
+    .social-link{padding: 0px 5px;background-color: #F2F1F1;font-size: 35px;color: #A7A6A6;transition: color .4s;}
+    .social-link:hover{color: black;}
+    a{
+        color: #8C8B8B;
+        cursor: pointer ;
+    }
+    a:link {
+        text-decoration: none !important;
+    }
+
+    a:visited {
+        text-decoration: none !important;
+    }
+
+    a:hover {
+        text-decoration: none ;
+        color: #FF7E17 ;
+    }
+
+    a:active {
+        text-decoration: none !important;
+    }
+    ul{list-style: none;padding: 0 !important;line-height: 2;}
+    .footer-link-heads{font-size: 17px;font-weight: normal;}
+
+
+    .dropdown-toggle span span{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover { background: none!important;}
+    #navi-area > .navbar-nav > li > a:hover i,#navi-area .navbar-default .navbar-nav > li > a:hover{
+        color:#F29120 !important
+    }
+
+    #navi-area .navbar-default .navbar-nav > li > a{
+        color:#ddd !important
+    }
+
+    .homeText{
+           font-size:12px;
+       }
+
+    @media only screen and (max-device-width : 414px) {
+        .navbar-brand{
+            width: 80% !important
+        }
+       .logochkafter { top:2%; }
+
+       .homeText{
+           font-size:17px;
+       }
+    }
+
+    @media only screen and (max-device-width : 1024px) {
+        .navbar-brand{
+            width: 80% !important
+        }
+       .logochkafter { top:2%; }
+
+       .homeText{
+           font-size:17px;
+       }
+    }
+
+
+
+       .navbar-nav li a h4.selected {
+
+            color: #53a4da;
+            border-bottom: 2px solid #3a77bc;
+            padding-bottom: 5px;
+        }
+
+    .dropdown-menu { min-width: 150px!important; }
+
+
+    /*    #navi-area .navbar-default .navbar-nav > li > a:hover{
+        color:#F29120
+        }*/
+
+    .navbar-nav li a h4 {
+        font-size: 0.98em;
+        color: #e5e5e4;
+        font-weight: 400!important;
+        border-bottom: 2px solid #fff;
+        padding-bottom: 5px;
+    }
+
+    .navbar-nav li a h4:hover {
+        border-bottom: 2px solid #3a77bc;
+/*        color: #3a77bc;*/
+color: #53a4da;
+        padding-bottom: 5px;
+    }
+
+		.over {
+			transform:             rotate(0deg );
+				-moz-transform:    rotate( 0deg );
+				-ms-transform:     rotate( 0deg );
+				-o-transform:      rotate( 0deg );
+				-webkit-transform: rotate( 0deg );
+			transition:             transform 950ms ease;
+				-moz-transition:    -moz-transform 950ms ease;
+				-ms-transition:     -ms-transform 950ms ease;
+				-o-transition:      -o-transform 950ms ease;
+				-webkit-transition: -webkit-transform 950ms ease;
+		}
+
+		.out {
+			transform:             rotate( 180deg );
+				-moz-transform:    rotate( 180deg );
+				-ms-transform:     rotate( 180deg );
+				-o-transform:      rotate( 180deg );
+				-webkit-transform: rotate( 180deg );
+			transition:             transform 1950ms ease;
+				-moz-transition:    -moz-transform 1950ms ease;
+				-ms-transition:     -ms-transform 1950ms ease;
+				-o-transition:      -o-transform 1950ms ease;
+				-webkit-transition: -webkit-transform 1950ms ease;
+		}
+</style>
+
+<div id="navi-area" class="hidden-xs hidden-sm">
+        <div class="navbar navbar-default navbar-fixed-top " role="navigation" style="box-shadow: 0px 1px 1px #288b97 !important;position: relative!important;background-color: #288b97 !important;height: 10px; !important;">
+            <div>
+                <div class="col-md-2">
+
+                    <img src="http://localhost/strix/assets/images/Logo.png" style="width: 100%;margin-top:10px;height:40px;"
+                        alt="logo">
+
+                </div>
+                <div class="col-md-10" style=" background:#288b97 !important;height: 10px; /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right,#39506b, #3a4d63)!important; /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right,#39506b, #3a4d63)!important; /* For Firefox 3.6 to 15 */
+    background: linear-gradient(bottom right,#39506b, #3a4d63)!important; /* Standard syntax (must be last) */">
+                    <style>
+                        .navbar-nav li {
+                            padding-right: 0px;
+                        }
+                    </style>
+                    <ul class="nav navbar-nav col-md-15">
+
+                        <li><a onclick=" location.href='http://localhost/strix/Home.html'">
+                                <h4 style="color: #ffffff;">Home</h4>
+                            </a></li>
+                        <li><a onclick=" location.href='http://localhost/strix/place.html'">
+                                <h4 style="color: #ffffff;"> Places</h4>
+                            </a></li>
+                        <li><a onclick=" location.href='http://localhost/strix/booking.html'">
+                                <h4 style="color: #ffffff;">Booking</h4>
+                            </a></li>
+                        <li><a onclick=" location.href='http://localhost/strix/payment.html'">
+                                <h4 style="color: #ffffff;">Payment</h4>
+                            </a></li>
+                        <li><a onclick=" location.href='http://localhost/strix/puzzle.html'">
+                                <h4 style="color: #ffffff;">Puzzle</h4>
+                            </a></li>
+                        <li><a onclick=" location.href='http://localhost/strix/game.html'">
+                                <h4 style="color: #ffffff;">Game</h4>
+                            </a></li>
+                        <li><a onclick=" location.href='http://localhost/strix/points.html'">
+                                <h4 style="color: #ffffff;"> POI</h4>
+                            </a></li>
+                        <li><a onclick=" location.href='http://localhost/strix/search.html'">
+                                <h4 style="color: #ffffff;">Search</h4>
+                            </a></li>
+                        <li><a onclick=" location.href='http://localhost/strix/qr.html'">
+                                <h4 style="color: #ffffff;">QR scan</h4>
+                            </a></li>
+                        <li><a onclick=" location.href='http://localhost/strix/aboutus.html'">
+                                <h4 style="color: #ffffff;">About Us</h4>
+                            </a></li>
+
+                </div>
+            </div>
+        </div>
+        <!--</div>-->
+    </div>
+
+
+
+
+
+    <ul id="gn-menu" class="gn-menu-main visible-xs visible-sm" style=" background: #288b97 !important;height: 50px; /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(bottom right,#39506b, #3a4d63)!important; /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(bottom right,#39506b, #3a4d63)!important; /* For Firefox 3.6 to 15 */
+background: linear-gradient(bottom right,#39506b, #3a4d63)!important; /* Standard syntax (must be last) */">
+
+        <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+        <div data-role="panel" id="left-panel" data-theme="c">
+            <ul data-role="listview" data-theme="d">
+                <li data-rel="back">
+                    <img src="http://localhost/strix/assets/images/icon.png">
+
+                    <p><b>Jhon Cyarus <br>
+                            Jhohcy@gmail.com </b> </p>
+
+                            <li><a onclick=" location.href='http://localhost/strix/Home.html'">Home</a>
+                            </li>
+                            <li><a onclick=" location.href='http://localhost/strix/game.html'">Game</a></li>
+                            <li data-icon="navigation"><a onclick=" location.href='http://localhost/strix/booking.html'">Booking</a></li>
+                            <li data-icon="location"><a onclick=" location.href='http://localhost/strix/poi.html'">Places of
+                                    interest</a></li>
+                            <li><a onclick=" location.href='http://localhost/strix/points.html'">Points</a></li>
+                            <li><a onclick=" location.href='http://localhost/strix/news_letters.html'">News Letters</a></li>
+                            <li data-icon="search"><a onclick=" location.href='http://localhost/strix/profile.html'">Profile</a></li>
+            
+                            <li data-icon="info"><a onclick=" location.href='http://localhost/strix/aboutus.html'">About us</a></li>
+                            <li data-icon="info"><a onclick=" location.href='http://localhost/strix/login.html'">Sign out</a></li>
+            </ul>
+
+        </div>
+        <li><a href="http://localhost/strix/home.html"> <img class="logochkafter" id="logochkid" src="http://localhost/strix/assets/images/Logo.png"
+                    alt="TrainMaster" style="width: 179px;
+                                                          position: absolute;
+
+                                                          left: 20%;top:0% !important;">
+            </a></li>
+
+        <li><a></a></li>
+
+
+    </ul>
+    </div>
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="">
+   <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      margin: auto!important;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+.image_ipad_carousal{
+    display: block;
+
+     margin: auto!important;
+}
+.image_iphone_carousal{
+    display: block;
+    height:200px;
+    max-width: 100%;
+}
+  </style>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--    <div id="paypal-button-container"></div>-->
+
+  <div id="myCarousel" class="hidden-xs hidden-sm" style="background-image: none !important;">
+  <div class="item active image_ipad_carousal">
+  <div class="row" style="background-color:#288b97;">
+    
+    <span class="col-xs-4" style="
+    margin-left:  200px;
+    display:  block;
+    text-align:  center;
+    font-size: 22px;
+    color: white;
+    font-weight:  400;
+     background-color: #288b97;
+    padding-bottom: 2px;
+    font-family: Helvetica;
+    ">Payment</span>
+    </div>
+<br>
+      </div>
+    
+  </div>
+  <div id="myCarousel" class="carousel slide visible-xs visible-sm" data-ride="carousel" style="background-image:none;">
+  
+
+    <!-- Wrapper for slides -->
+
+      
+    <div class="row" style="background-color:#288b97;">
+    
+            <span class="col-xs-4" style="
+            margin-left:  100px;
+            display:  block;
+            text-align:  center;
+            font-size: 22px;
+            color: white;
+            font-weight:  400;
+             background-color: #288b97;
+            padding-bottom: 2px;
+            font-family: Helvetica;
+            ">Payment</span>
+            </div>
+    
+    </div>
+
+
+  </div>
+</div>
+<!-- subscription-->
+<style>
+
+    /*Deals in inbox*/
+
+    .text-field-deals{height: 35px;font-size: 20px; font-weight: 200;  width: 100%; padding: 10px 10px 20px 0px; background-color: #e5e5e4}
+    .tooltip-cus{margin-left: 197px;margin-top: 23px; display:none; }
+    .subslbl {font-size: 20px; font-weight: 200;}
+    .email-align {font-size: 20px; font-weight: 200; padding-left: 10px!important; padding-right:10px!imporatant;}
+    .subbtn {    background-color: #3276B1;   width: 100%;   font-size: 19px!important;  color: white;  margin-top: 15px; padding: 2px 0px 5px 0px;}
+    .dealh2 {text-align: center;color: #606060; padding-left: 20px;padding-right: 20px;}
+    .inner-wrap {max-width: 1240px;margin: 0 auto;min-height: 110px;padding: 0px 15px;}
+    .outter-wrap {width: 100%;float: left;margin-bottom: 30px;background-color: white !important;position: relative;border: none; }
+</style>
+<div>
+<div id="myCarousel" class="visible-xs visible-sm" style="background-image: none !important;">
+     <div class="inner-wrap" style="width: 100%;">
+   <div class="row" style="padding: 10px;
+    background-color: white;display:block;padding-top: 0;">
+
+    <div class="row">
+        <div class="col-xs-4" style="padding-left: 0 !important;">
+            <label style="color:#288b97;font-weight: 400;">Booking Id</label>
+        </div>
+
+        <div class="col-xs-4">
+            <label style="font-weight: 700;margin-left: 11%;">BL1001</label>
+        </div>
+
+   </div>
+       <div class="row">
+           <div class="col-xs-4" style="padding-left: 0 !important;">
+               <label style="color:#288b97;font-weight: 400;">Total Amount</label>
+           </div>
+
+           <div class="col-xs-4">
+               <label style="font-weight: 700;margin-left: 11%;">Rs 2200.00</label>
+           </div>
+
+       </div>
+
+   </div>
+
+
+
+<br>
+
+
+         <div class="row" style="padding: 10px;display:block;padding-top: 0;">
+
+             <div class="row">
+                 <label style="font-weight: 400;
+    color: black;
+    font-size: 15px;
+    font-style: italic;">Have you already played Treasure Hunt ? Then go and check your points to win a free train ticket.</label>
+
+             </div>
+
+         </div>
+
+         <div class="row" style="padding: 10px;display:block;padding-top: 0;">
+
+             <div class="row">
+                 <label style="font-weight: 400;
+    color: black;
+    font-size: 15px;
+    font-style: italic;">If not quickly go and play treasure hunt to earn more points to redeem a free traid ticket or free ride.</label>
+
+             </div>
+
+         </div>
+
+<br>
+         <div class="row" style="padding: 10px;display:block;padding-top: 0;padding-right: 0;">
+             <label style="font-weight: 400;color:#288b97;">Leave a comment here (additional)</label>
+             <div class="row">
+                 <textarea style="width: 100%;
+    height: 208px;" placeholder="Leave a comment here"></textarea>
+
+             </div>
+
+         </div>
+
+
+         <div class="row" style="padding: 10px;display:block;padding-top: 0;padding-right: 0;">
+
+             <div class="row">
+                 <button id="paypal-button-container" style="background: transparent;
+    border: none;float: right;"></button>
+
+             </div>
+
+         </div>
+<br><br>
+
+</div>
+
+   </div>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+   <div id="myCarousel" class="hidden-xs hidden-sm" style="background-image: none !important;font-size: 16px !important;">
+       <div class="inner-wrap" style="width: 100%;padding: 0px 82px !important;">
+
+           <div class="row" style="padding: 10px;
+    background-color: white;display:block;padding-top: 0;">
+
+               <div class="row">
+                   <div class="col-md-3" style="padding-left: 0 !important;">
+                       <label style="color:#ff3030;font-weight: 400;">Booking Id</label>
+                   </div>
+
+                   <div class="col-md-3">
+                       <label style="font-weight: 700;margin-left: 11%;">BL1001</label>
+                   </div>
+                   <div class="col-md-3" style="padding-left: 0 !important;">
+                       <label style="color:#ff3030;font-weight: 400;">Toyal Amount</label>
+                   </div>
+
+                   <div class="col-md-3">
+                       <label style="font-weight: 700;margin-left: 11%;">Rs 2200.00</label>
+                   </div>
+
+               </div>
+
+
+           </div>
+<br>
+           <div class="row" style="padding: 10px;display:block;padding-top: 0;">
+
+               <div class="row">
+                   <label style="font-weight: 400;
+                   color: black;
+                   font-size: 20px;
+                   font-style: italic;">Have you already played Treasure Hunt ? Then go and check your points to win a free train ticket.</label>
+               </div>
+
+
+           </div>
+
+           <div class="row" style="padding: 10px;display:block;padding-top: 0;">
+
+               <div class="row">
+                   <label style="font-weight: 400;
+    color: black;
+    font-size: 20px;
+    font-style: italic;">If not quickly go and play treasure hunt to earn more points to redeem a free traid ticket or free ride.</label>
+               </div>
+
+
+           </div>
+
+<br><br>
+           <div class="row" style="padding: 10px;display:block;padding-top: 0;padding-right: 0;">
+               <label style="font-weight: 400;color:#ff3030;">Leave a comment here (additional)</label>
+               <div class="row">
+                 <textarea style="width: 100%;
+    height: 208px;" placeholder="Leave a comment here"></textarea>
+
+               </div>
+
+           </div>
+
+
+           <div class="row" style="padding: 10px;display:block;padding-top: 0;padding-right: 0;">
+
+               <div class="row">
+                   <div id="paypal-button-container" style="background: transparent;
+    border: none;;"></div>
+
+               </div>
+
+           </div>
+
+
+       </div>
+   </div>
+
+
+
+     
+</div>
+
+
+</div>
+
+
+
+    <div class="col-md-12" style="padding-top: 2px;margin: 0 auto;border-top: 2px #eee solid; color:white;text-align: center;background-color: white;
+    font-size: 13px; background-color: #288b97;
+    height: 27px;">
+      2018 All Rights Reserved. Created by strix
+    </div>
+
+</body>
+</html>
+

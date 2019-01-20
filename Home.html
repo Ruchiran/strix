@@ -34,8 +34,14 @@
 </head>
 
 <body class="bodyid" id="chkbodyid">
-
-
+        <ul style=" background: #288b97 !important;height: 50px; /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(bottom right,#39506b, #3a4d63)!important; /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(bottom right,#39506b, #3a4d63)!important; /* For Firefox 3.6 to 15 */
+        background: linear-gradient(bottom right,#39506b, #3a4d63)!important; /* Standard syntax (must be last) */">
+    <div id="demo-page" data-theme="d" data-url="demo-page">
+            <div data-role="header" data-theme="c">
+            <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+            </div>
     </script>
 
     <style>
@@ -262,12 +268,7 @@ ul{list-style: none;padding: 0 !important;line-height: 2;}
     </div>
 
 
-    <ul id="gn-menu" class="gn-menu-main visible-xs visible-sm" style=" background: #288b97 !important;height: 50px; /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right,#39506b, #3a4d63)!important; /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right,#39506b, #3a4d63)!important; /* For Firefox 3.6 to 15 */
-    background: linear-gradient(bottom right,#39506b, #3a4d63)!important; /* Standard syntax (must be last) */">
-
-        <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+ 
         <div data-role="panel" id="left-panel" data-theme="c">
             <ul data-role="listview" data-theme="d">
                 <li data-rel="back">
@@ -300,9 +301,10 @@ ul{list-style: none;padding: 0 !important;line-height: 2;}
 
         <li><a></a></li>
 
+        </div> </div>
 
     </ul>
-    </div>
+    
     <script>
         new gnMenu(document.getElementById('gn-menu'));
 
@@ -506,7 +508,7 @@ $(document).ready(function(){
                 <table style="width: 100%;">
                     <tr>
                         <td style="width: 32%;">
-                            <a href="http://localhost/strix/puzzle_desc">
+                            <a onclick=" location.href='http://localhost/strix/game.html'">
                                 <img src="http://localhost/strix/assets/images/p10.png" style="height: 53px;width: 53px;border-radius: 10px;display: block;margin: 0 auto;-moz-box-shadow: 1px 1px 3px 2px white;
   -webkit-box-shadow: 1px 1px 3px 2px white;
   box-shadow:         1px 1px 3px 2px white">
@@ -516,7 +518,7 @@ $(document).ready(function(){
                                     Hunt</label>
                             </div>
                         </td>
-                        <td style="width: 32%;"><a href="http://trainmaster.cf/points">
+                        <td style="width: 32%;"><a onclick=" location.href='http://localhost/strix/points.html'">
                                 <img src="http://localhost/strix/assets/images/p16.png" style="height: 53px;width: 53px;border-radius: 10px;display: block;margin: 0 auto;-moz-box-shadow: 1px 1px 3px 2px white;
   -webkit-box-shadow: 1px 1px 3px 2px white;
   box-shadow:         1px 1px 3px 2px white">
@@ -525,7 +527,7 @@ $(document).ready(function(){
                                 <label style="color:white;font-size: small;display: block;margin: 0 auto;text-align: center;">Points</label>
                             </div>
                         </td>
-                        <td style="width: 32%;"><a href="http://trainmaster.cf/poi">
+                        <td style="width: 32%;"><a onclick=" location.href='http://localhost/strix/poi.html'">
                                 <img src="http://localhost/strix/assets/images/p15.png" style="height: 53px;-moz-box-shadow: 1px 1px 3px 2px white;
   -webkit-box-shadow: 1px 1px 3px 2px white;
   box-shadow:         1px 1px 3px 2px white; width: 53px;border-radius: 10px;display: block;margin: 0 auto;">
@@ -541,7 +543,7 @@ $(document).ready(function(){
                     </tr>
                     <tr>
                         <td style="width: 32%;">
-                            <a href="http://trainmaster.cf/profile_view">
+                            <a onclick=" location.href='http://localhost/strix/profile.html'">
                                 <img src="http://localhost/strix/assets/images/p17.png" style="height: 53px;-moz-box-shadow: 1px 1px 3px 2px white;
   -webkit-box-shadow: 1px 1px 3px 2px white;
   box-shadow:         1px 1px 3px 2px white ;width: 53px;border-radius: 10px;display: block;margin: 0 auto;">
@@ -550,7 +552,7 @@ $(document).ready(function(){
                                 <label style="color:white;font-size: small;display: block;margin: 0 auto;text-align: center;">Profile</label>
                             </div>
                         </td>
-                        <td style="width: 32%;"><a href="http://trainmaster.cf/train_search">
+                        <td style="width: 32%;"><a onclick=" location.href='http://localhost/strix/booking.html'">
                                 <img src="http://localhost/strix/assets/images/p11.png" style="height: 53px;-moz-box-shadow: 1px 1px 3px 2px white;
   -webkit-box-shadow: 1px 1px 3px 2px white;
   box-shadow:         1px 1px 3px 2px white;width: 53px;border-radius: 10px;display: block;margin: 0 auto;">
@@ -559,7 +561,7 @@ $(document).ready(function(){
                                 <label style="color:white;font-size: small;display: block;margin: 0 auto;text-align: center;">Booking</label>
                             </div>
                         </td>
-                        <td style="width: 32%;"><a href="http://trainmaster.cf/aboutus">
+                        <td style="width: 32%;"><a onclick=" location.href='http://localhost/strix/aboutus.html'">
                                 <img src="http://localhost/strix/assets/images/dcg1.png" style="height: 53px;-moz-box-shadow: 1px 1px 3px 2px white;
   -webkit-box-shadow: 1px 1px 3px 2px white;
   box-shadow:         1px 1px 3px 2px white;width: 53px;border-radius: 10px;display: block;margin: 0 auto;">
@@ -581,7 +583,7 @@ $(document).ready(function(){
                             <table style="width:100%;">
                                 <tr>
                                     <td style="padding-left: 19px;">
-                                        <a href="http://trainmaster.cf/news_letters">
+                                        <a onclick=" location.href='http://localhost/strix/news_letters.html'">
                                             <img src="http://localhost/strix/assets/images/p18.png" style="height: 53px;-moz-box-shadow: 1px 1px 3px 2px white;
   -webkit-box-shadow: 1px 1px 3px 2px white;
   box-shadow:         1px 1px 3px 2px white;width: 53px;border-radius: 10px;display: block;margin: 0 auto;">
@@ -591,7 +593,7 @@ $(document).ready(function(){
                                         </div>
                                     </td>
                                     <td>
-                                        <a href="http://trainmaster.cf/login">
+                                        <a onclick=" location.href='http://localhost/strix/login.html'">
                                             <img src="http://localhost/strix/assets/images/r19.png" style="height: 53px;-moz-box-shadow: 1px 1px 3px 2px white;
   -webkit-box-shadow: 1px 1px 3px 2px white;
   box-shadow:         1px 1px 3px 2px white;width: 53px;border-radius: 10px;">
